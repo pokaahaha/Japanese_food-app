@@ -1,4 +1,3 @@
-import React from "react";
 import { Card } from "../UI/Card";
 import { MealItem } from "./MealItem/MealItem";
 import styles from "./MealList.module.css";
@@ -36,6 +35,7 @@ export const MealList = () => {
   const mealList = DUMMY_MEALS.map((meal) => (
     <MealItem
       key={meal.id}
+      id={meal.id}
       name={meal.name}
       description={meal.description}
       price={meal.price}
