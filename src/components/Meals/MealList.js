@@ -1,6 +1,6 @@
-import { Card } from "../UI/Card";
-import { MealItem } from "./MealItem/MealItem";
 import styles from "./MealList.module.css";
+import Card from "../UI/Card";
+import MealItem from "./MealItem/MealItem";
 
 const DUMMY_MEALS = [
   {
@@ -31,7 +31,7 @@ const DUMMY_MEALS = [
   },
 ];
 
-export const MealList = () => {
+const MealList = () => {
   const mealList = DUMMY_MEALS.map((meal) => (
     <MealItem
       key={meal.id}
@@ -50,3 +50,5 @@ export const MealList = () => {
     </section>
   );
 };
+
+export default MealList;

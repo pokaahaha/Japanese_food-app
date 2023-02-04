@@ -1,8 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Cart from "./components/Cart/Cart";
-import { Header } from "./components/Layout/Header";
-import { Meals } from "./components/Meals/Meals";
-import { CartContextProvider } from "./store/CartContextProvider";
+import Header from "./components/Layout/Header";
+import Meals from "./components/Meals/Meals";
+import CartContextProvider from "./store/CartContextProvider";
 
 function App() {
   const [cartIsVisible, setCartIsVisible] = useState(false);
