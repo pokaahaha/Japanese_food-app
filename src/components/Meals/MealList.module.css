@@ -11,6 +11,15 @@
   padding: 0;
 }
 
+.loading{
+  text-align: center;
+}
+
+.error{
+  text-align: center;
+  color: red;
+}
+
 @keyframes meals-appear {
   from {
     opacity: 0;
